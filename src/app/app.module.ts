@@ -10,6 +10,9 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { DeviceMotion } from '@ionic-native/device-motion';
+import { Toast } from '@ionic-native/toast';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -31,6 +34,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
+    DeviceMotion,
+    Toast,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
